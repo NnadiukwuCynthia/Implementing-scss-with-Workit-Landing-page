@@ -1,0 +1,42 @@
+@use './fonts' as fonts;
+
+// large heading
+%heading-big{
+    font-family: fonts.$secondary-ff;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1;
+
+        @media screen and (min-width: 768px) {
+            font-size: 60px;
+        }
+
+        @media screen and (min-width: 1440px) {
+          font-size: 80px;
+        }
+}
+
+// medium heading
+%heading-medium {
+    font-family: fonts.$secondary-ff;
+    font-size:  48px; 
+    font-weight: 600;
+    line-height: 1.16; 
+
+        @media screen and (min-width: 768px) {
+            font-size: 56px;
+        }
+}
+
+// small heading 
+%heading-small{
+    font-family: fonts.$secondary-ff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.28;
+
+        @media screen and (min-width: 768px) {
+            font-size: 32px; 
+            line-height: 1.25;
+        }
+}
